@@ -2,11 +2,20 @@
 **C++ Program that evaluates simple expression **
 
 **Description:-**
-initially i am going throug -ve scenarios where if any non valid character will be present then directly it will return as false.
-like in below example, there is 1 extra right paranthesis is presetn in last token.
-so before doing memory allocation and do evaluation, its better than i ll direct called a while loop which will find out extra right paranthesis and treat this expression as invalid
+The main purpose of this application is to evaluate simple expression.
+At the same time it will handle all scenarios including +ve as well -ve test scenarios.
+The evaluates() function takes input as expression string and result. once evaluation will be done, it updates the result variable and returns true.
+If there will be any non-valid character presents or common error occurs, it will handle and return false.
 
-**Sample Expression :** (1 + 2) * 4 + (8 / 2) * 3 + (6 - 4) )
+so before doing expression evaluation i have checked few -ve test scenario.
+
+**Example :**
+
+**Sample Expression :** (1 + 2) * 4 + (8 / 2) * 3 + (6 - 4) **)**                                                               
+
+In the above example, if you see, there is 1 extra right paranthesis is present in last.
+instead of evaluating (which requires memory allocation and calling functions) the expression  from begining to till last and in last it will find as non-valid character.
+So here i am using a while loop to check that condition without doing evaluation which saves memory as well as time.
 
 **Test Case Scenario:**
 1. if the expression is null ptr or not
