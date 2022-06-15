@@ -35,3 +35,9 @@ so before doing memory allocation and do evaluation, its better than i ll direct
     //const char* exp = "(1 + (12 + 3 * 2))";
     //const char* exp = "13 - -2";
     //const char* exp = "-1 + 3";
+
+
+
+**NOTE :** the below scenario is not working. it is crashing.
+
+**Known Issue : **//const char* exp = "1 + 2 ) + ( 5"
